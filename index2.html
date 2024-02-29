@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        header{
+            background-color:#232f3e;
+            color:white;
+            text-align:center;
+        }
+
+        nav {
+            background-color:#232f3e;
+            color: #ffffff;
+        } 
+
+        .nav-left ol{
+            list-style-type: none;
+            display:flex;
+        }
+
+        .nav-right{
+            position:absolute;
+            margin-left:82%;
+            margin-top:12px;
+        }
+
+        nav{
+            display:flex;
+        }
+
+        nav a {
+            color: #ffffff;
+            text-decoration: none;
+            padding:10px;
+            margin:0 20px
+        }
+
+        .nav-left{
+            display:flex;
+        }
+
+
+        .products{
+            display:flex;
+            gap:50px;
+        }
+
+        .product1{
+            background-color: #ffffff;
+            border: 1px solid #ddd;
+            width:400px;
+            margin:20px;
+            padding:10px;
+
+        }
+
+        footer {
+           background-color:#232f3e;
+           color:white;
+           text-align:center;
+           padding:5px;
+           margin:0px;
+           position: absolute;
+           bottom: 0;
+           width: 98.5%;
+        }
+    </style>
+        
+</head>
+<body>
+    <header>
+        <h1>My E-Commerce Site</h1>
+        <h2>welcome to this E-commerce site</h2>
+        <nav>
+            <div class="nav-left">
+                <ol>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Products</a></li>
+                    <li><a href="#">About us</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ol>
+              
+            </div>
+            <div class="nav-right">
+              <input type="search" placeholder="Search here." />
+              <button type = "submit">Go</button>
+            </div>
+        </nav>  
+    </header>
+
+<div class = "products">
+    <div class = "product1">
+        <img src = "data:image/jpeg;base64,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" width = "200" alt = "iphone image" />
+        <h2>iphone 15</h2>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Distinctio, aliquam?</p>
+        <p>Rs.80,000/-</p>
+        <button>Add to Cart</button>
+    </div>
+
+    <div class = "product1">
+        <img src = "data:image/jpeg;base64,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" width = "200" alt = "iphone image"/>
+        <h2>iphone 15 pro</h2>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Distinctio, aliquam?</p>
+        <p>Rs.100000/-</p>
+        <button>Add to Cart</button>
+    </div>
+
+</div>
+    <footer>
+        <p>2024  iphone Brands. All rights reserved.</p>
+    </footer>
+</body>
+</html>
